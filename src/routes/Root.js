@@ -12,7 +12,7 @@ function Routes() {
       <Route path="/" component={MainPage} exact />
       <Route path="/default" component={DefaultPage} exact/>
       <Route path="/test" component={TestPage} exact/>
-      <Route path="/login" componet={LoginPage} exact/>
+      <Route path="/login" component={LoginPage} exact/>
     </div>
   );
 }
