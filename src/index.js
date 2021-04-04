@@ -1,6 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import './style/feed.css';
+import './style/footer.css';
+import './style/globals.css';
+import './style/login.css';
+import './style/navigation.css';
+import './style/reset.css';
+import './style/variables.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
