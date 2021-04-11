@@ -6,7 +6,7 @@ const Navigation = () => {
     <nav className="navigation">
       <div className="navigation__column">
         <a href="feed.html">
-          <img src="images/logo.png" />
+          <img src="images/logo.png" alt="" />
         </a>
       </div>
       <div className="navigation__column">
@@ -21,7 +21,7 @@ const Navigation = () => {
             </a>
           </li>
           <li className="navigation__list-item">
-            <a href="#" className="navigation__link">
+            <a href="/" className="navigation__link">
               <i className="fa fa-heart-o fa-lg"></i>
             </a>
           </li>
