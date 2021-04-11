@@ -7,7 +7,7 @@ const LoginPage = () => {
             
 
 
-            <main id="login">
+      <main id="login">
       {/* <!-- 좌측 이미지 2222222--> */}
       <div className="login__column">
         <img src={process.env.PUBLIC_URL + '/images/phoneImage.png' } className="login__phone" alt="인스타그램이미지"/>
