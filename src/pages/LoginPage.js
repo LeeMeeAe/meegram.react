@@ -5,7 +5,7 @@ const LoginPage = () => {
   return (
     <div>
       <main id="login">
-        {/* <!-- 좌측 이미지 2222222--> */}
+        {/* <!-- 좌측 이미지 --> */}
         <div className="login__column">
           <img
             src={process.env.PUBLIC_URL + "/images/phoneImage.png"}
@@ -39,17 +39,17 @@ const LoginPage = () => {
             </form>
             {/* <!-- 비밀번호 찾기 --> */}
             <span className="login__divider">or</span>
-            <a href="#" className="login__link">
+            <a href="/" className="login__link">
               <i className="fa fa-money"></i>
               Log in with Facebook
             </a>
-            <a href="#" className="login__link login__link--small">
+            <a href="/" className="login__link login__link--small">
               Forgot password
             </a>
           </div>
           {/* <!-- 회원가입 박스 --> */}
           <div className="login__box">
-            <span>Don't have an account?</span> <a href="#">Sign up</a>
+            <span>Don't have an account?</span> <a href="/">Sign up</a>
           </div>
           {/* <!-- app다운로드 --> */}
           <div className="login__box--transparent">

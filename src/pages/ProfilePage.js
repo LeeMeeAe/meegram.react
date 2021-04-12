@@ -36,7 +36,7 @@ const ProfilePage = () => {
               eveniet quibusdam ipsam omnis fugit. Tempore voluptates ratione
               recusandae natus illo perspiciatis suscipit, odio consequuntur
               quasi obcaecati minus! Omnis.
-              <a href="#">serranoarevalo.com</a>
+              <a href="/">serranoarevalo.com</a>
             </p>
           </div>
         </header>

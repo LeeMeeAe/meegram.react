@@ -11,7 +11,7 @@ const ExplorePage = () => {
         <ul className="explore__users">
           <li className="explore__user">
             <div className="explore__user-column">
-              <img src="images/avatar.jpg" className="explore__avatar" />
+              <img src={process.env.PUBLIC_URL + "/images/avatar.jpg"} className="explore__avatar" alt="프로필사진" />
               <div className="explore__info">
                 <span className="explore__username">inthetiger</span>
                 <span className="explore__full-name">Lynn Park</span>
@@ -23,7 +23,7 @@ const ExplorePage = () => {
           </li>
           <li className="explore__user">
             <div className="explore__user-column">
-              <img src="images/avatar.jpg" className="explore__avatar" />
+              <img src={process.env.PUBLIC_URL + "/images/avatar.jpg"} className="explore__avatar" alt="프로필사진" />
               <div className="explore__info">
                 <span className="explore__username">inthetiger</span>
                 <span className="explore__full-name">Lynn Park</span>
@@ -35,7 +35,7 @@ const ExplorePage = () => {
           </li>
           <li className="explore__user">
             <div className="explore__user-column">
-              <img src="images/avatar.jpg" className="explore__avatar" />
+              <img src={process.env.PUBLIC_URL + "/images/avatar.jpg"} className="explore__avatar" alt="프로필사진" />
               <div className="explore__info">
                 <span className="explore__username">inthetiger</span>
                 <span className="explore__full-name">Lynn Park</span>

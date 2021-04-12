@@ -9,13 +9,13 @@ const MainPage = () => {
       <main id="feed">
         <div className="photo">
           <header className="photo__header">
-            <img src="images/avatar.jpg" className="photo__avatar" />
+          <img src={process.env.PUBLIC_URL + "/images/avatar.jpg"} className="photo__avatar" alt="인스타그램이미지" />
             <div className="photo__user-info">
               <span className="photo__author">inthetiger</span>
               <span className="photo__location">Bestechung</span>
             </div>
           </header>
-          <img src="images/feedPhoto.jpg" />
+          <img src={process.env.PUBLIC_URL + "/images/feedPhoto.jpg"} alt="피드사진" />
           <div className="photo__info">
             <div className="photo__actions">
               <span className="photo__action">
@@ -56,13 +56,13 @@ const MainPage = () => {
         </div>
         <div className="photo">
           <header className="photo__header">
-            <img src="images/avatar.jpg" className="photo__avatar" />
+            <img src={process.env.PUBLIC_URL + "/images/avatar.jpg"} className="photo__avatar" alt="피드사진" />
             <div className="photo__user-info">
               <span className="photo__author">inthetiger</span>
               <span className="photo__location">Bestechung</span>
             </div>
           </header>
-          <img src="images/feedPhoto.jpg" />
+          <img src={process.env.PUBLIC_URL + "/images/feedPhoto.jpg"} alt="피드사진" />
           <div className="photo__info">
             <div className="photo__actions">
               <span className="photo__action">
