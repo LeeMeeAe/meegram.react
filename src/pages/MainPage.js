@@ -1,6 +1,10 @@
 import React from "react";
 import Navigation from "../component/common/Navigation";
 import Footer from "../component/common/Footer";
+//FontAwesome
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHeart } from "@fortawesome/free-regular-svg-icons";
+import { faComment } from "@fortawesome/free-regular-svg-icons";
 
 const MainPage = () => {
   return (
@@ -9,19 +13,30 @@ const MainPage = () => {
       <main id="feed">
         <div className="photo">
           <header className="photo__header">
-          <img src={process.env.PUBLIC_URL + "/images/avatar.jpg"} className="photo__avatar" alt="인스타그램이미지" />
+            <img
+              src={process.env.PUBLIC_URL + "/images/avatar.jpg"}
+              className="photo__avatar"
+              alt="인스타그램이미지"
+            />
             <div className="photo__user-info">
               <span className="photo__author">inthetiger</span>
               <span className="photo__location">Bestechung</span>
             </div>
           </header>
-          <img src={process.env.PUBLIC_URL + "/images/feedPhoto.jpg"} alt="피드사진" />
+          <img
+            src={process.env.PUBLIC_URL + "/images/feedPhoto.jpg"}
+            alt="피드사진"
+          />
           <div className="photo__info">
             <div className="photo__actions">
               <span className="photo__action">
+                {/* FontAwesome 변환 */}
+                <FontAwesomeIcon icon={faHeart} className="heart" />
                 <i className="fa fa-heart-o fa-lg"></i>
               </span>
               <span className="photo__action">
+                {/* FontAwesome 변환 */}
+                <FontAwesomeIcon icon={faComment} className="comment" />
                 <i className="fa fa-comment-o fa-lg"></i>
               </span>
             </div>
@@ -56,19 +71,30 @@ const MainPage = () => {
         </div>
         <div className="photo">
           <header className="photo__header">
-            <img src={process.env.PUBLIC_URL + "/images/avatar.jpg"} className="photo__avatar" alt="피드사진" />
+            <img
+              src={process.env.PUBLIC_URL + "/images/avatar.jpg"}
+              className="photo__avatar"
+              alt="피드사진"
+            />
             <div className="photo__user-info">
               <span className="photo__author">inthetiger</span>
               <span className="photo__location">Bestechung</span>
             </div>
           </header>
-          <img src={process.env.PUBLIC_URL + "/images/feedPhoto.jpg"} alt="피드사진" />
+          <img
+            src={process.env.PUBLIC_URL + "/images/feedPhoto.jpg"}
+            alt="피드사진"
+          />
           <div className="photo__info">
             <div className="photo__actions">
               <span className="photo__action">
+                {/* FontAwesome 변환 */}
+                <FontAwesomeIcon icon={faHeart} className="heart" />
                 <i className="fa fa-heart-o fa-lg"></i>
               </span>
               <span className="photo__action">
+                {/* FontAwesome 변환 */}
+                <FontAwesomeIcon icon={faComment} className="comment" />
                 <i className="fa fa-comment-o fa-lg"></i>
               </span>
             </div>
