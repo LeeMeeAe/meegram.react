@@ -1,5 +1,6 @@
 import React from "react";
 import Footer from "../component/common/Footer";
+import LoginForm from "../component/common/LoginForm";
 
 const LoginPage = () => {
   return (
@@ -22,21 +23,7 @@ const LoginPage = () => {
               alt="인스타그램로고"
               className="login__logo"
             />
-            <form action="feed.html" method="get" className="login__form">
-              <input
-                type="text"
-                name="username"
-                placeholder="Username"
-                required
-              />
-              <input
-                type="password"
-                name="password"
-                placeholder="Password"
-                required
-              />
-              <input type="submit" value="Log in" />
-            </form>
+            <LoginForm />
             {/* <!-- 비밀번호 찾기 --> */}
             <span className="login__divider">or</span>
             <a href="/" className="login__link">
