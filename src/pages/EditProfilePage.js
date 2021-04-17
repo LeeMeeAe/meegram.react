@@ -10,8 +10,11 @@ const EditProfilePage = () => {
         <div className="edit-profile__container">
           <header className="edit-profile__header">
             <div className="edit-profile__avatar-container">
-              <img src="images/avatar.jpg" className="edit-profile__avatar" alt="프로필사진" />
-              <img src={process.env.PUBLIC_URL + "/images/avatar.jpg"} className="edit-profile__avatar" alt="프로필사진" />
+              <img
+                src={process.env.PUBLIC_URL + "/images/avatar.jpg"}
+                className="edit-profile__avatar"
+                alt="프로필사진"
+              />
             </div>
             <h4 className="edit-profile__username">serranoarevalo</h4>
           </header>

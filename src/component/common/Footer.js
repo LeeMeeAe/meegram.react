@@ -1,4 +1,5 @@
 import React from "react";
+import history from "../../routes/history";
 
 const Footer = () => {
   return (
@@ -7,54 +8,54 @@ const Footer = () => {
         <nav className="footer__nav">
           <ul className="footer__list">
             <li className="footer__list-item">
-              <a href="/" className="footer__link">
-                About Us
-              </a>
+              {/* <a href="/" className="footer__link"> */}
+              About Us
+              {/* </a> */}
             </li>
             <li className="footer__list-item">
-              <a href="/" className="footer__link">
-                Support
-              </a>
+              {/* <a href="/" className="footer__link"> */}
+              Support
+              {/* </a> */}
             </li>
             <li className="footer__list-item">
-              <a href="/" className="footer__link">
-                Blog
-              </a>
+              {/* <a href="/" className="footer__link"> */}
+              Blog
+              {/* </a> */}
             </li>
             <li className="footer__list-item">
-              <a href="/" className="footer__link">
-                Press
-              </a>
+              {/* <a href="/" className="footer__link"> */}
+              Press
+              {/* </a> */}
             </li>
             <li className="footer__list-item">
-              <a href="/" className="footer__link">
-                Api
-              </a>
+              {/* <a href="/" className="footer__link"> */}
+              Api
+              {/* </a> */}
             </li>
             <li className="footer__list-item">
-              <a href="/" className="footer__link">
-                Jobs
-              </a>
+              {/* <a href="/" className="footer__link"> */}
+              Jobs
+              {/* </a> */}
             </li>
             <li className="footer__list-item">
-              <a href="/" className="footer__link">
-                Privacy
-              </a>
+              {/* <a href="/" className="footer__link"> */}
+              Privacy
+              {/* </a> */}
             </li>
             <li className="footer__list-item">
-              <a href="/" className="footer__link">
-                Terms
-              </a>
+              {/* <a href="/" className="footer__link"> */}
+              Terms
+              {/* </a> */}
             </li>
             <li className="footer__list-item">
-              <a href="/" className="footer__link">
-                Directory
-              </a>
+              {/* <a href="/" className="footer__link"> */}
+              Directory
+              {/* </a> */}
             </li>
             <li className="footer__list-item">
-              <a href="/" className="footer__link">
-                Language
-              </a>
+              {/* <a href="/" className="footer__link"> */}
+              Language
+              {/* </a> */}
             </li>
           </ul>
         </nav>
