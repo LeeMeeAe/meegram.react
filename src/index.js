@@ -11,6 +11,7 @@ import "./style/variables.css";
 import "./style/explore.css";
 import "./style/editProfile.css";
 import "./style/profile.css";
+
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
