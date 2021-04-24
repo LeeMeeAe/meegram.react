@@ -5,7 +5,7 @@ import ExplorePage from "../pages/ExplorePage";
 import EditProfilePage from "../pages/EditProfilePage";
 import ProfilePage from "../pages/ProfilePage";
 import { Router, Route } from "react-router-dom";
-import history from "./history";
+import history from "./History";
 
 function Routes() {
   return (

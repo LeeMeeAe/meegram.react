@@ -5,7 +5,7 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { faCompass } from "@fortawesome/free-regular-svg-icons";
 import { faHeart } from "@fortawesome/free-regular-svg-icons";
 import { faUser } from "@fortawesome/free-regular-svg-icons";
-import history from "../../routes/history";
+import history from "../../routes/History";
 // import createBrowserHistory from "history/createBrowserHistory";
 // const history = createBrowserHistory({ forceRefresh: true });
 
