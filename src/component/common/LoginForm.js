@@ -1,71 +1,57 @@
 import React, { useState } from "react";
-import history from "../../routes/History";
+import history from "../../routes/History"
 
 const LoginForm = () => {
 
-  const login_id = 'meeae';
-  const login_password = '1212';
+  //1. 버튼에 이벤트를 준다.
+  //2. 아이디와 비밀번호 입력값을 준다.
+  //3. 아이디와 비밀번호 입력값을 useState 담기
+  //4. 로그인 성공
 
-  // [ 순서도 ] 로그인 ->아이디 패스워드 입력 -> 버튼클릭
+  const loginId = 'meeae';
+  const loginPw = '1212';
 
-  // 로그인 정보 공란일때 useState
-  // setInputUserName, setInputUserPassword 담는다.
   const [inputUserName,setInputUserName] = useState("");
   const [inputUserPassWord,setInputUserPassWord] = useState("");
-
-  // 아이디, 비밀번호를 제대로 입력했는지 체크
-  const handleInputSubmitButton = (e) =>{
-    // submit할때 url변경을 막아줌. 안에서 해결하게끔. 이벤트에 preventDefault
-    e.preventDefault();
-
-     // 로그인 정보 공란일때 이벤트
-    if (inputUserName == "") {
-      alert("아이디를 입력해주세요");
-      return;
-    }
-
-    if (inputUserPassWord =="") {
-      alert("비밀번호를 입력해주세요")
-      return;
-    }
-    //로그인 정보 맞을때 "" 없어야지 함수로 생각
-    if (inputUserName !== login_id){
-      alert("아이디를 정확하게 입력해주세요")
-      // return;
-    }
-
-    if (inputUserPassWord !== login_password){
-      alert("비밀번호를 정확하게 입력해주세요")
-      // return;
-    }
-    
-    alert("로그인이 성공했습니다")
-
-    history.push("/main")
-
-    //로그인 계정정보 확인 alert
-    // alert(
-    //   "입력하신 아이디" + inputUserName + 
-    //   "비밀번호" + inputUserPassWord +
-    //   "입니다."
-    // );
-
-  };
-
-  // 입력값을 설정하고 나중에 useState 변경값에 담는다.
-  const handleChangeInputUsername = (e) =>{
-    setInputUserName(e.target.value)
-  };
-  const handleChangeInputPassword = (e) =>{
-    setInputUserPassWord(e.target.value)
-  };
-
-  // 아이디가 틀렸을때 
-  // 비밀번호가 틀렸을때 
   
-  //버튼 클릭 시 맞으면 로그인 성공
-  //버튼 클릭 시 틀리면 로그인 실패 
+  const handleSubmitButton = (e) =>{
 
+    e.preventDefault();
+  
+
+      if (inputUserName == "") {
+        alert("아이디를 입력해주세요");
+        return;
+      }
+
+      if(inputUserPassWord == "") {
+        alert("비밀번호를 입력하세요");
+        return;
+      }
+
+      if(inputUserName !== loginId) {
+        alert("아이디를 정확하게 입력해주세요")
+        return;
+      }
+
+      if(inputUserPassWord !== loginPw) {
+        alert("비밀번호를 정확하게 입력해주세요")
+        return;
+      }
+
+      alert("로그인을 성공했습니다")
+
+      history.push("/main")
+
+  };
+
+  const handleChangeInputUserName = (e) => {
+    setInputUserName(e.target.value);
+  };
+
+  const handleChangeInputUserPassWord = (e) => {
+    setInputUserPassWord(e.target.value);
+  };
 
   return (
     <form className="login__form">
@@ -74,20 +60,21 @@ const LoginForm = () => {
         name="username"
         placeholder="Username"
         required
-        onChange={ (e)=> handleChangeInputUsername(e) }
+        onChange = { (e) => handleChangeInputUserName(e) }
+        
       />
       <input
         type="password"
         name="password"
         placeholder="Password"
         required
-        onChange={ (e)=> handleChangeInputPassword(e) }
+        onChange = { (e) => handleChangeInputUserPassWord(e) }
         
       />
       <button
         value="Log in"
         className="submitButton"
-        onClick={ (e) => handleInputSubmitButton(e) }
+        onClick = { (e)=> handleSubmitButton(e) }
       >
         Login
       </button>
