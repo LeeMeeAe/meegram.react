@@ -1,5 +1,5 @@
 import React from "react";
-import history from "../../routes/History";
+import history from '../../routes/history';
 
 const Footer = () => {
   return (

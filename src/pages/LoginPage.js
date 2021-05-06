@@ -36,7 +36,7 @@ const LoginPage = () => {
           </div>
           {/* <!-- 회원가입 박스 --> */}
           <div className="login__box">
-            <span>Don't have an account?</span> <a href="/">Sign up</a>
+            <span>Don't have an account?</span> <a href="/join"> Sign up </a>
           </div>
           {/* <!-- app다운로드 --> */}
           <div className="login__box--transparent">
