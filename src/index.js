@@ -5,6 +5,7 @@ import "./style/feed.css";
 import "./style/footer.css";
 import "./style/globals.css";
 import "./style/login.css";
+import "./style/join.css";
 import "./style/navigation.css";
 import "./style/reset.css";
 import "./style/variables.css";
