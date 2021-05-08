@@ -22,9 +22,10 @@
 
 .footer__list .footer__list-item {
   margin-right: 10px;
+  color: var(--link-color);
 }
 
 .footer .footer__link {
   text-decoration: none;
-  color: var(--link-color);
+  /* color: var(--link-color); */
 }
