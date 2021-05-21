@@ -12,6 +12,8 @@ import "./style/variables.css";
 import "./style/explore.css";
 import "./style/editProfile.css";
 import "./style/profile.css";
+import "./style/mobile.css";
+
 
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
